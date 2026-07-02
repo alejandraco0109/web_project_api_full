@@ -1,0 +1,147 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 880px;
+  margin: auto;
+  border-bottom: 1px solid #545454;
+  flex-wrap: wrap; 
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.header__image {
+  margin: 0;
+  padding: 45px 0 41px;
+}
+.header__main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 32px;
+  margin-top: 45px;
+}
+
+.header__user-info {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 0;
+  border-bottom: 1px solid #545454;
+}
+
+.header__user-info_visible {
+  display: flex;
+}
+
+.header__user-email {
+  color: #FFFFFF;
+  font-family: 'Inter-Local', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 27px;
+  line-height: 22px;
+}
+
+.header__logo {
+  margin: 0;
+  width: clamp(126px, 14.7vw, 173px);
+  height: clamp(24px, 2.9vw, 33px);
+}
+
+.header__link {
+  color: #FFFFFF;
+  font-family: 'Inter-Local', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 22px;
+}
+
+.header__link:hover {
+  opacity: 60%;
+}
+
+.header__link.header__button {
+  background: none;
+  color: #A9A9A9;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter-Local', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 22px;
+}
+
+.header__menu-button {
+  display: none;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: url("../images/hamburguesa.svg") no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  margin-right: 27px;
+}
+
+.header__menu-button:hover {
+  opacity: 60%;
+}
+
+.header__menu-button_type_close {
+  background-image: url("../images/Close-Icon.png");
+}
+
+.header__menu-button_type_close:hover {
+  opacity: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    border-bottom: none;
+  }
+
+  .header__link {
+    font-size: 14px;
+  }
+
+  .header__main-container {
+    margin-top: 28px;
+    border-bottom: 1px solid #545454;
+  }
+
+  .header__container_desktop {
+    display: none;
+  }
+
+  .header__menu-button {
+    display: block;
+  }
+
+  .header__user-email {
+    margin-right: 0;
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+
+  .header__button_type_logout {
+    margin-bottom: 40px;
+    color: #A9A9A9;
+    background: transparent;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .header__container {
+    padding-right: 30px;
+  }
+
+  .header__logo {
+    padding-left: 30px;
+  }
+}
+
