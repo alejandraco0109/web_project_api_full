@@ -67,9 +67,9 @@ useEffect(() => {
   if (jwt) {
     auth.checkToken(jwt)
       .then((res) => {
-        if (res && res.data) {
+        if (res) {
           setIsLoggedIn(true);
-          setEmail(res.data.email);
+          setEmail(res.email);
           api.setToken(jwt); 
           navigate("/"); 
         } else {

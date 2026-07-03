@@ -20,3 +20,6 @@ Celebrate y Joi (Validación de datos)
 # Estructura del Repositorio
 /frontend: Código fuente de la aplicación React.
 /backend: Servidor de Node.js con la API REST.
+
+Clona el repositorio:
+git clone: https://github.com/alejandraco0109/web_project_api_full.git

@@ -5,7 +5,7 @@ const User = require('../models/user');
 const BadRequestError = require('../errors/BadRequestError');
 const UnauthorizedError = require('../errors/UnauthorizedError');
 const NotFoundError = require('../errors/NotFoundError');
-const ConflictError = require('../errors/ConflictError');
+const ConflictError = require('../errors/ConflictError.js');
 
 module.exports.login = (req, res, next) => {
   const { email, password } = req.body;
@@ -39,6 +39,9 @@ module.exports.createUser = (req, res, next) => {
   bcrypt.hash(password, 10)
     .then((hash) => {
       return User.create({
+        name,
+        about,
+        avatar,
         email,
         password: hash,
       });

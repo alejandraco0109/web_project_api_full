@@ -6,17 +6,17 @@ const userSchema = new mongoose.Schema({
     type: String,
     minlength: 2,
     maxlength: 30,
-    default: 'Ingresa tu nombre',
+    default: 'Jacques Cousteau',
   },
   about: {
     type: String,
     minlength: 2,
     maxlength: 30,
-    default: 'Ingresa información sobre ti',
+    default: 'Explorador',
   },
   avatar: {
     type: String,
-    default: 'https://unsplash.com/es/ilustraciones/marcador-de-posicion-de-imagen-de-perfil-para-una-persona-desconocida-x9LSAQ7_V1s',
+    default: 'https://practicum-content.s3.us-west-1.amazonaws.com/resources/moved_avatar_1604080799.jpg',
     validate: {
       validator(v) {
         return /^(https?:\/\/)(www\.)?[\w\d-._~:/?#[\]@!$&'()*+,;=]+#?$/.test(v);
