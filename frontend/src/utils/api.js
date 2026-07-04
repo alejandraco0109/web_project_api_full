@@ -67,7 +67,7 @@ setToken(token) {
 }
 
 const api = new Api({
-  baseUrl: "https://api.miproyecto.happyminecraft.org/v1",
+  baseUrl: "http://api.miproyectoapi.crabdance.com",
   headers: {
     "Content-Type": "application/json",
     "Authorization": `Bearer ${localStorage.getItem('jwt')}`
