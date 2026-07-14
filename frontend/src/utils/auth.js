@@ -1,4 +1,4 @@
-export const BASE_URL = "";
+export const BASE_URL = "/api";
 
 const checkResponse = (res) => {
   if (res.ok) {

@@ -8,7 +8,7 @@ const NotFoundError = require('../errors/NotFoundError');
 const ConflictError = require('../errors/ConflictError.js');
 
 module.exports.login = (req, res, next) => {
-  const { email, password } = req.body;
+  const { email, password, name, about, avatar } = req.body;
 
   User.findOne({ email }).select('+password')
     .then((user) => {

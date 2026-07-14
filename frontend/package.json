@@ -10,7 +10,11 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.jsx",
     "lint:fix": "eslint . --ext .js,.jsx --fix",
+<<<<<<< HEAD
 "dev": "vite"
+=======
+    "dev": "vite"
+>>>>>>> 5a04161 (mi proyecto)
   },
   "keywords": [],
   "author": "",

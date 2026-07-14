@@ -21,5 +21,5 @@ Celebrate y Joi (Validación de datos)
 /frontend: Código fuente de la aplicación React.
 /backend: Servidor de Node.js con la API REST.
 
-Clona el repositorio:
-git clone: https://github.com/alejandraco0109/web_project_api_full.git
+backend: miproyectoapi.crabdance.com
+frontend: api.miproyectoapi.crabdance.com
